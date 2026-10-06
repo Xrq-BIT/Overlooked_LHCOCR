@@ -1,0 +1,62 @@
+﻿script,line,configuration_or_input
+scripts/Figure1/Figure1_ab_世界地图温差与背景热浪纬向分布组图.R,15,"heat_mode <- Sys.getenv(""FIG1_HEAT_METRIC"", unset = ""delta_hwn"")"
+scripts/Figure1/Figure1_ab_世界地图温差与背景热浪纬向分布组图.R,18,"""/Users/xuruiqing/Desktop/文章试验整体流程/0706专注煤电与微气候反事实/"","
+scripts/Figure1/Figure1_ab_世界地图温差与背景热浪纬向分布组图.R,22,"""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图一温差统计/"","
+scripts/Figure1/Figure1_ab_世界地图温差与背景热浪纬向分布组图.R,30,"excel_path <- ""/Users/xuruiqing/Desktop/文章试验整体流程/0706专注煤电与微气候反事实/coal_plants_with_LSM_10km_productivity副本2.xlsx"""
+scripts/Figure1/Figure1_ab_世界地图温差与背景热浪纬向分布组图.R,31,"out_dir <- ""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图一温差统计/dT_HWN_latitudinal_figure"""
+scripts/Figure1/Figure1_ab_世界地图温差与背景热浪纬向分布组图.R,67,df_raw <- read_excel(excel_path)
+scripts/Figure1/Figure1_cdef_具体厂温度等温线环状图导出svg.R,22,"tif_path <- ""/Users/xuruiqing/Downloads/plant_airtemp_polybands_2019_id_100000103891.tif"""
+scripts/Figure1/Figure1_cdef_具体厂温度等温线环状图导出svg.R,23,"shp_path <- ""/Users/xuruiqing/Desktop/文章试验整体流程/data/all_7400_with_area/all_7400_with_area.shp"""
+scripts/Figure1/Figure1_cdef_具体厂温度等温线环状图导出svg.R,65,r <- rast(tif_path)
+scripts/Figure1/Figure1_cdef_具体厂温度等温线环状图导出svg.R,108,"all_poly <- st_read(shp_path, quiet = TRUE)"
+scripts/Figure1/Figure1_f_生成案例100000103891.R,3,"""/Users/xuruiqing/Desktop/文章试验整体流程/论文图件与SourceData/组图一/"","
+scripts/Figure1/Figure1_f_生成案例100000103891.R,7,"""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图一温差统计/"","
+scripts/Figure1/Figure1_f_生成案例100000103891.R,15,"'tif_path <- ""/Users/xuruiqing/Downloads/plant_airtemp_polybands_2019_id_100000103891.tif""',"
+scripts/Figure1/Figure1_g_箱线图煤电按照fuel类型分组显著性_当前数据.R,13,"""/Users/xuruiqing/Desktop/文章试验整体流程/"","
+scripts/Figure1/Figure1_g_箱线图煤电按照fuel类型分组显著性_当前数据.R,18,"""/Users/xuruiqing/Desktop/文章试验整体流程/"","
+scripts/Figure1/Figure1_g_箱线图煤电按照fuel类型分组显著性_当前数据.R,35,raw <- read_excel(excel_path)
+scripts/Figure1/Figure1_h_箱线图煤电按热电联产分类带显著性检验_当前数据.R,11,"""/Users/xuruiqing/Desktop/文章试验整体流程/"","
+scripts/Figure1/Figure1_h_箱线图煤电按热电联产分类带显著性检验_当前数据.R,16,"""/Users/xuruiqing/Desktop/文章试验整体流程/"","
+scripts/Figure1/Figure1_h_箱线图煤电按热电联产分类带显著性检验_当前数据.R,21,raw <- read_excel(excel_path)
+scripts/Figure3/Figure3_ac_2050年GADM城市年度损失减少世界地图.R,19,"SCENARIO <- Sys.getenv(""SCENARIO"", unset = ""SSP126"")"
+scripts/Figure3/Figure3_ac_2050年GADM城市年度损失减少世界地图.R,20,"FIG3_STYLE <- Sys.getenv(""FIG3_STYLE"", unset = ""purple"")"
+scripts/Figure3/Figure3_ac_2050年GADM城市年度损失减少世界地图.R,23,"excel_path <- ""/Users/xuruiqing/Desktop/文章试验整体流程/未来情景/coal_plant_future_result2.xlsx"""
+scripts/Figure3/Figure3_ac_2050年GADM城市年度损失减少世界地图.R,24,"gadm_path <- ""/Users/xuruiqing/Desktop/文章试验整体流程/data/gadm_410.gpkg"""
+scripts/Figure3/Figure3_ac_2050年GADM城市年度损失减少世界地图.R,25,"out_dir <- ""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图三退役与未来情景/2050年GADM城市年度损失减少世界地图"""
+scripts/Figure3/Figure3_ac_2050年GADM城市年度损失减少世界地图.R,57,df_raw <- read_excel(excel_path)
+scripts/Figure3/Figure3_ac_2050年GADM城市年度损失减少世界地图.R,151,"gadm_parts <- st_read(gadm_path, query = geometry_query, quiet = TRUE)"
+scripts/Figure3/Figure3_ac插图_2050年三情景避免损失环形图.R,8,"excel_path <- ""/Users/xuruiqing/Desktop/文章试验整体流程/未来情景/coal_plant_future_result2.xlsx"""
+scripts/Figure3/Figure3_ac插图_2050年三情景避免损失环形图.R,9,"out_dir <- ""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图三退役与未来情景/2050年三情景避免损失环形图"""
+scripts/Figure3/Figure3_ac插图_2050年三情景避免损失环形图.R,11,"FIG3_STYLE <- Sys.getenv(""FIG3_STYLE"", unset = ""purple"")"
+scripts/Figure3/Figure3_ac插图_2050年三情景避免损失环形图.R,20,raw <- read_excel(excel_path)
+scripts/Figure3/Figure3_bd_2050年GADM城市年度损失减少纬度分布.R,10,"base_dir <- ""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图三退役与未来情景"""
+scripts/Figure3/Figure3_bd_2050年GADM城市年度损失减少纬度分布.R,35,"dat <- read_csv(source_csv, show_col_types = FALSE) %>%"
+scripts/Figure3/Figure3_ef_四象限图金额对数版_图二协调配色.R,17,"base_dir <- ""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图三退役与未来情景"""
+scripts/Figure3/Figure3_ef_四象限图金额对数版_图二协调配色.R,31,"plot_width <- as.numeric(Sys.getenv(""QUADRANT_PLOT_WIDTH"", ""10.4""))"
+scripts/Figure3/Figure3_ef_四象限图金额对数版_图二协调配色.R,32,"plot_height <- as.numeric(Sys.getenv(""QUADRANT_PLOT_HEIGHT"", ""6.4""))"
+scripts/Figure3/Figure3_ef_四象限图金额对数版_图二协调配色.R,33,"plot_suffix <- Sys.getenv(""QUADRANT_PLOT_SUFFIX"", """")"
+scripts/Figure3/Figure3_ef_四象限图金额对数版_图二协调配色.R,36,"city <- read.csv(input_csv, stringsAsFactors = FALSE, check.names = FALSE)"
+scripts/Figure3/Figure3_ef数据准备_四象限图改进版.R,20,"excel_path <- ""/Users/xuruiqing/Desktop/文章试验整体流程/未来情景/coal_plant_future_result2.xlsx"""
+scripts/Figure3/Figure3_ef数据准备_四象限图改进版.R,22,"out_dir <- ""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图三退役与未来情景/city_persistent_risk_quadrant_gadm_admin2_top10_each_nature_musd"""
+scripts/Figure3/Figure3_ef数据准备_四象限图改进版.R,104,df_raw <- read_excel(excel_path)
+scripts/Figure2/Figure2_a_b数据_图二前半部分_融合地图与空间类型贡献润色版.R,18,"excel_path <- ""/Users/xuruiqing/Desktop/文章试验整体流程/0706专注煤电与微气候反事实/coal_plants_with_LSM_10km_productivity副本2.xlsx"""
+scripts/Figure2/Figure2_a_b数据_图二前半部分_融合地图与空间类型贡献润色版.R,19,"gadm_path <- ""/Users/xuruiqing/Desktop/文章试验整体流程/data/gadm_410.gpkg"""
+scripts/Figure2/Figure2_a_b数据_图二前半部分_融合地图与空间类型贡献润色版.R,20,"out_dir <- ""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图二经济损失/图二前半部分润色版"""
+scripts/Figure2/Figure2_a_b数据_图二前半部分_融合地图与空间类型贡献润色版.R,52,raw <- read_excel(excel_path)
+scripts/Figure2/Figure2_a_b数据_图二前半部分_融合地图与空间类型贡献润色版.R,138,"gadm_parts <- st_read(gadm_path, query = query, quiet = TRUE) %>%"
+scripts/Figure2/Figure2_a插图_图二年度总损失构成环形图.R,8,"excel_path <- ""/Users/xuruiqing/Desktop/文章试验整体流程/0706专注煤电与微气候反事实/coal_plants_with_LSM_10km_productivity副本2.xlsx"""
+scripts/Figure2/Figure2_a插图_图二年度总损失构成环形图.R,9,"out_dir <- ""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图二经济损失/图二整体润色版素材"""
+scripts/Figure2/Figure2_a插图_图二年度总损失构成环形图.R,14,"raw <- read_excel(excel_path, sheet = ""coal"")"
+scripts/Figure2/Figure2_b_图二空间类型贡献竖版.R,9,"base_dir <- ""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图二经济损失"""
+scripts/Figure2/Figure2_b_图二空间类型贡献竖版.R,24,"share_df <- read_csv(input_csv, show_col_types = FALSE) %>%"
+scripts/Figure2/Figure2_c_ExtraLoss_Q1Q4人均GDP箱线图_第二排竖版.R,10,"""/Users/xuruiqing/Desktop/文章试验整体流程/"","
+scripts/Figure2/Figure2_c_ExtraLoss_Q1Q4人均GDP箱线图_第二排竖版.R,15,"""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图二经济损失/"","
+scripts/Figure2/Figure2_c_ExtraLoss_Q1Q4人均GDP箱线图_第二排竖版.R,20,"dat <- read_excel(excel_path, sheet = ""coal"") %>%"
+scripts/Figure2/Figure2_de_图二城市国家双栏棒棒糖排序润色版.R,12,"excel_path <- ""/Users/xuruiqing/Desktop/文章试验整体流程/0706专注煤电与微气候反事实/coal_plants_with_LSM_10km_productivity副本2.xlsx"""
+scripts/Figure2/Figure2_de_图二城市国家双栏棒棒糖排序润色版.R,13,"out_dir <- ""/Users/xuruiqing/Desktop/文章试验整体流程/绘图/图二经济损失/图二整体润色版素材"""
+scripts/Figure2/Figure2_de_图二城市国家双栏棒棒糖排序润色版.R,23,raw <- read_excel(excel_path)
+scripts/Supplementary/SI_Fig1_ab_SAM训练曲线.R,4,"h <- read.csv(file.path(folder,""source_data/SAM_training_history.csv""))"
+scripts/Supplementary/SI_Fig2_abcd_厂区影像与边界_R原绘图.R,8,"boundary_file <- Sys.getenv(""SI_BOUNDARY_FILE"")"
+scripts/Supplementary/SI_Fig2_abcd_厂区影像与边界_R原绘图.R,10,"polys <- st_read(boundary_file,quiet=TRUE)"
+scripts/Supplementary/SI_Fig2_abcd_厂区影像与边界_R原绘图.R,20,"r <- project(rast(tif),paste0('EPSG:',epsg),method='bilinear',res=2)"
+scripts/Supplementary/SI_Fig3_ab_温差地图与纬度分布.R,19,df_raw <- read_excel(excel_path)
